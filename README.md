@@ -14,7 +14,6 @@ O projeto consome Api do Git Hub para apresentar em uma home Page, **uma lista d
 
 ```https://api.github.com/search/users q=repos:followers:>2000&language:java&page=1&per_page=500```
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Preparando o Ambiente e Subindo a Aplicação 
 
