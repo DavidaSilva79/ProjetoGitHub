@@ -1,13 +1,11 @@
 # Projeto GitHub
 > Projeto visando o consumo da Api do GitHub em uma interface com cadastro de usuários e Login.
 
-One to two paragraph statement about your product and what it does.
-
 ![](header.png)
 
-## Installation
+## Tecnologias Envolvidas
 
-OS X & Linux:
+O projeto faz uso do framework Spring MVC em conjunto com o Spring Boot, no front end também foi usado o thymeleaf de forma básica, a parte de login faz uso do Spring Security que garante a segurança das rotas, e do acesso através de interceptors, além dos dados cadastrados e consultados do usuário serem criptografados no banco , o Fork do MySql chamado Maria DB foi usado como banco de dados.
 
 ```sh
 npm install my-crazy-module --save
