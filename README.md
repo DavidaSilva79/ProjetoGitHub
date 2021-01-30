@@ -16,47 +16,18 @@ O projeto consome Api do Git Hub para apresentar em uma home Page, **uma lista d
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
-## Development setup
+## Preparando o Ambiente e Subindo a Aplicação 
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+Para usar aplicação é necessário ter  alguns componentes instalados na maquina,
+**Java na Versão 8** e o banco de dados  **Maria DB 10.5**, basta criar um banco de dados 
+E **colocar a senha o nome do banco e o usuário no arquivo de configurações application.propertie**s em “projetosocin\src\main\resources” como o Spring Boot
+se encarrega do servidor de aplicações, para subir a aplicação no http://localhost:8080
+**Inicie o método o método main da Classe ProjetosocinApplication** em projetosocin\src\main\java\br\com\socin\projetosocin
+
+## Usando a Aplicação
+
+Depois da Aplicação ter subido com sucesso basta acessar **localhost:8080/cadastro**
+Criar um usuário e senha  e para Logar basta clicar no canto superior esquerdo em Login em seguida o usuário seja direcionado direto para a home que traz a **listagem de usuários do GitHub com seu Login e endereço do GitHub e Avatar.**
 
 
 
-## Release History
-
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
-
-## Meta
-
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
-## Contributing
-
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
