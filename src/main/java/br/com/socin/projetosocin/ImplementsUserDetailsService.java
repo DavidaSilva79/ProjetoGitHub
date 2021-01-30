@@ -14,16 +14,16 @@ import br.com.socin.projetosocin.repository.UsuarioRepository;
 
 @Repository
 @Transactional
-public class ImplementsUserDetailsService implements UserDetailsService{
+public class ImplementsUserDetailsService implements UserDetailsService {
 
 	@Autowired
-	private UsuarioRepository ur;
-	
+	private UsuarioRepository usuarioRespository;
+
 	@Override
 	public UserDetails loadUserByUsername(String login) throws UsernameNotFoundException {
-		Usuario usuario = ur.findByLogin(login);
-		
-		if(usuario == null){
+		Usuario usuario = usuarioRespository.findByLogin(login);
+
+		if (usuario == null) {
 			throw new UsernameNotFoundException("Usuario não encontrado!");
 		}
 		return usuario;

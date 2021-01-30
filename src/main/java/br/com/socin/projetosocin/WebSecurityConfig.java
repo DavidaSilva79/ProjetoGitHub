@@ -1,7 +1,5 @@
 package br.com.socin.projetosocin;
 
-
-
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,39 +21,23 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		
-		http
-		.authorizeRequests()
-		.antMatchers("/","/cadastro","/hello","/novo","/ddd","/teste").permitAll()
-		.anyRequest().authenticated()
-		.and().formLogin(form -> form
-				.loginPage("/login").defaultSuccessUrl("/home", true)
-				.permitAll()
-				
+
+		http.authorizeRequests().antMatchers("/", "/cadastro", "/hello", "/novo", "/ddd", "/teste").permitAll()
+				.anyRequest().authenticated().and()
+				.formLogin(form -> form.loginPage("/login").defaultSuccessUrl("/home", true).permitAll()
+
 				).logout(logout -> logout.logoutUrl("/logout"));
-	
+
 	}
-		
-	
-	
+
 	@Autowired
 	private ImplementsUserDetailsService userDetailsService;
-	
+
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
-		auth.userDetailsService(userDetailsService)
-		.passwordEncoder(new BCryptPasswordEncoder());
-		
+		auth.userDetailsService(userDetailsService).passwordEncoder(new BCryptPasswordEncoder());
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

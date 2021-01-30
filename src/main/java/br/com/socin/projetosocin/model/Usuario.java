@@ -1,7 +1,5 @@
 package br.com.socin.projetosocin.model;
 
-
-
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
@@ -17,17 +15,16 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
-public class Usuario implements UserDetails, Serializable{
-	
-private static final long serialVersionUID = 1L;
-	
+public class Usuario implements UserDetails, Serializable {
+
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	private String login;
-	
-	private String nomeCompleto;
-	
-	private String senha;
 
+	private String nomeCompleto;
+
+	private String senha;
 
 	public String getLogin() {
 		return login;
@@ -53,28 +50,27 @@ private static final long serialVersionUID = 1L;
 		this.senha = senha;
 	}
 
-
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-	
+
 		return null;
 	}
 
 	@Override
 	public String getPassword() {
-	
+
 		return this.senha;
 	}
 
 	@Override
 	public String getUsername() {
-		
+
 		return this.login;
 	}
 
 	@Override
 	public boolean isAccountNonExpired() {
-		
+
 		return true;
 	}
 
@@ -85,7 +81,7 @@ private static final long serialVersionUID = 1L;
 
 	@Override
 	public boolean isCredentialsNonExpired() {
-		
+
 		return true;
 	}
 
@@ -94,7 +90,5 @@ private static final long serialVersionUID = 1L;
 
 		return true;
 	}
-
-	
 
 }

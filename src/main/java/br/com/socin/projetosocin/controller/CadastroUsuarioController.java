@@ -14,7 +14,6 @@ import br.com.socin.projetosocin.model.RequisicaoNovoUsuario;
 import br.com.socin.projetosocin.model.Usuario;
 import br.com.socin.projetosocin.repository.UsuarioRepository;
 
-
 @Controller
 public class CadastroUsuarioController {
 
@@ -36,15 +35,12 @@ public class CadastroUsuarioController {
 		usuario.setLogin(req.getNome());
 		usuario.setNomeCompleto(req.getNome());
 		usuario.setSenha(new BCryptPasswordEncoder().encode(req.getSenha()));
-		
 
 		usuarioRepository.save(usuario);
 
 		System.out.println(usuario);
-		
-		
 
-		return "home";
+		return "login";
 	}
 
 }
