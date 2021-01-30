@@ -5,9 +5,21 @@
 	<div th:replace="~{base :: logo}"></div>
 
 	<div class="container">
-		<div th:replace="~{base :: titulo('Home Page')}"></div>
-          HOME PAGE
-
+	  <div th:replace="~{base :: titulo('Listagem Ranking GitUsers')}"></div>
+                 
+         <div style="border: 5px solid #717209;"class="card mb-3" th:each="usuario : ${Usuarios}">
+         
+              <img style=" width: 7%;" th:src="${usuario.AvatarURL}">
+         
+              <label style=" display: inline-block; margin-bottom: 0; font-weight: bolder;">Nick do Usuario</label>
+         
+              <div><span th:text="${usuario.login}">login</span></div>
+         
+              <label style="display: inline-block; margin-bottom: 0;font-weight: bolder;">Endereco do Git do Usuario</label>
+         
+              <div><span th:text="${usuario.HTMLURL}">HTMLURL</span></div>
+         
+       </div>
 	</div>
 </body>
 </html>

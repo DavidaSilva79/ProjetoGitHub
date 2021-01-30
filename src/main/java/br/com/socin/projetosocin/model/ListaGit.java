@@ -1,5 +1,6 @@
 package br.com.socin.projetosocin.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListaGit {
@@ -16,7 +17,7 @@ public class ListaGit {
 
 	public ListaGit() {
 		super();
-		// TODO Auto-generated constructor stub
+		lista = new ArrayList<>();
 	}
 	
 	

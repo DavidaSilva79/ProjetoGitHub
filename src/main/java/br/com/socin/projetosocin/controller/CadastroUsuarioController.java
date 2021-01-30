@@ -44,7 +44,7 @@ public class CadastroUsuarioController {
 		
 		
 
-		return "hello";
+		return "home";
 	}
 
 }
