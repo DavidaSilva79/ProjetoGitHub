@@ -7,19 +7,9 @@
 
 O projeto faz uso do framework **Spring MVC** em conjunto com o **Spring Boot**, no front end também foi usado o **Thymeleaf** de forma básica, a parte de login faz uso do **Spring Security** que garante a segurança das rotas, e do acesso através de interceptors, além dos dados cadastrados e consultados do usuário serem criptografados no banco , o Fork do **MySql** chamado **Maria DB** foi usado como banco de dados.
 
-```sh
-npm install my-crazy-module --save
-```
+## O consumo da API Rest do GitHub
 
-Windows:
-
-```sh
-edit autoexec.bat
-```
-
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+O projeto consome Api do Git Hub para apresentar em uma home Page, uma lista de usuários ativos e engajados na plataforma, *o critério na consulta para o engajamento na plataforma é feito pelo numero de seguidores onde entra na lista somente usuários globais com mais de 2000 seguidores*, este foi o endpoint usado "https://api.github.com/search/users?q=repos:followers:>2000&language:java&page=1&per_page=500".
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
