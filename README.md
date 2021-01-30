@@ -10,6 +10,8 @@ O projeto faz uso do framework **Spring MVC** em conjunto com o **Spring Boot**,
 ## O consumo da API Rest do GitHub
 
 O projeto consome Api do Git Hub para apresentar em uma home Page, uma lista de usuários ativos e engajados na plataforma, *o critério na consulta para o engajamento na plataforma é feito pelo numero de seguidores onde entra na lista somente usuários globais com mais de 2000 seguidores*, segue abaixo o endpoint usado.
+
+
 ```https://api.github.com/search/users q=repos:followers:>2000&language:java&page=1&per_page=500```
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
@@ -18,10 +20,7 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 
 Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
 
-sh
-make install
-npm test
-```
+
 
 ## Release History
 
