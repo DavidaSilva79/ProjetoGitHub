@@ -30,15 +30,13 @@ Criar um usuário e senha  e para Logar basta clicar no canto superior esquerdo 
 
 ## Segue Abaixo Imagens de todas as telas do projeto
 
-https://ibb.co/vknZzPW
+![alt text](https://github.com/DavidaSilva79/ProjetoGitHub/blob/master/pictures/cadastro.png?raw=true)
 
-https://ibb.co/yYB6kqr
+![alt text](https://github.com/DavidaSilva79/ProjetoGitHub/blob/master/pictures/login.png?raw=true)
 
-https://ibb.co/cCRjczC
+![alt text](https://github.com/DavidaSilva79/ProjetoGitHub/blob/master/pictures/home1.png?raw=true)
 
-https://ibb.co/f9sh4kd
-
-
+![alt text](https://github.com/DavidaSilva79/ProjetoGitHub/blob/master/pictures/home2.png?raw=true)
 
 
 
